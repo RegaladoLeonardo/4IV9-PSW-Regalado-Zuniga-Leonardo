@@ -56,8 +56,14 @@ article{
               width: 40%;
               display:inline-block;
               background-color: rgb(107, 107, 107);
+              
 }
 
-li{
-
+.diplomita{
+              width: 320px;
+              height: 80px;
+              padding: 0px;
+              margin-right: 10px;
 }
+
+

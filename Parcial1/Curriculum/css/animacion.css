@@ -8,6 +8,28 @@
               }
 }
 
+@keyframes giratorio{
+              from{
+                            transform: rotate(0deg);
+                            margin-left: 0;
+              }
+              to{
+                            transform: rotate(360deg);
+                            margin-left: 20vw;
+              }
+}
+
+@keyframes movimiento-diagonal {
+              from {
+                            left: 0;
+                            top: 0;
+              }
+              to {
+                            left: 100px;
+                            top: 100px;
+              }
+}
+
 .fondo-foto{
 
               animation-name: colores;
@@ -16,5 +38,17 @@
               animation-iteration-count: infinite;
 }
 
+.papel{
+              animation-name: giratorio;
+              animation-duration: 2s;
+              animation-timing-function: ease-in-out;
+              animation-iteration-count: infinite;
+              animation-direction: alternate;
+}
 
+.music{
+              animation-name: movimiento-diagonal;
+              animation-duration: 9s;
+              animation-iteration-count: infinite;
+}
 
