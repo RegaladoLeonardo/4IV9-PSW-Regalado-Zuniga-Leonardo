@@ -19,14 +19,14 @@ html,body{
               display:inline-flex;
 }
 
-.personales{
-              border-radius: 2px;
-              border: solid black;
-              display:inline-flex;
+.secciones{
               width: 40%;
               display:inline-block;
               height: 300px;
               background-color: rgb(107, 107, 107);
+              border: solid 3px rgb(3, 1, 1);
+              margin-left: 4px;
+              margin-right: 4px;
 }
 
 
@@ -52,9 +52,12 @@ hr{
               padding: 1px;
 }
 
- article{
+article{
               width: 40%;
               display:inline-block;
-              height: 300px;
               background-color: rgb(107, 107, 107);
+}
+
+li{
+
 }

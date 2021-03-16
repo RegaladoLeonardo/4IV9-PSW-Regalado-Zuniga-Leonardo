@@ -1,17 +1,17 @@
 @keyframes colores{
               from{
-                            border: rgb(137, 11, 153) 9px solid
+                            border: rgb(139, 7, 157) 9px solid
               }
               to{
                             
-                            border: rgb(160, 13, 13) 9px solid
+                            border: rgb(206, 17, 17) 9px solid
               }
 }
 
 .fondo-foto{
 
               animation-name: colores;
-              animation-duration: 4s;
+              animation-duration: 2s;
               animation-direction: alternate;
               animation-iteration-count: infinite;
 }
