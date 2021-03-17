@@ -67,7 +67,7 @@
               border: 16px solid rgb(17, 233, 53);
               border-top: 16px solid rgb(10, 20, 100);
               border-bottom: 16px solid rgb(90, 10, 10);
-              border-radius: 20%;
+              border-radius: 30%;
               animation: girar 2s ease-in-out infinite;
 
 }
