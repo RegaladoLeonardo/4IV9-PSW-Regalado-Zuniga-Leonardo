@@ -11,12 +11,21 @@
 @keyframes giratorio{
               from{
                             transform: rotate(0deg);
-                            margin-left: 0;
               }
               to{
                             transform: rotate(360deg);
-                            margin-left: 20vw;
               }
+}
+
+.girar{
+
+              align-items: center;
+              animation-name: giratorio;
+              animation-duration: 5s;
+              
+              animation-timing-function: ease-in-out;
+              
+              animation: giratorio 2s ease-in-out infinite;
 }
 
 
@@ -31,8 +40,7 @@
 
 .papel{
               animation-name: giratorio;
-              animation-duration: 2s;
-              animation-timing-function: ease-in-out;
+              animation-duration: 3s;
               animation-iteration-count: infinite;
               animation-direction: alternate;
 }
@@ -42,4 +50,6 @@
               animation-duration: 9s;
               animation-iteration-count: infinite;
 }
+
+
 
