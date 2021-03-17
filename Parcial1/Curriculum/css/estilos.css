@@ -37,9 +37,10 @@ html,body{
 }
 
 .fondo-foto{
-              border: solid 7px rgb(3, 1, 1);
+              border: solid 9px rgb(3, 1, 1);
               display:inline-flex;
               border-radius: 50%;
+              border:9px;
               padding: 0px;
 
 }

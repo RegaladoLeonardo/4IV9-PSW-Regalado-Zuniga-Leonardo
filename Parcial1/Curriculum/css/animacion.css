@@ -19,21 +19,12 @@
               }
 }
 
-@keyframes movimiento-diagonal {
-              from {
-                            left: 0;
-                            top: 0;
-              }
-              to {
-                            left: 100px;
-                            top: 100px;
-              }
-}
+
 
 .fondo-foto{
 
               animation-name: colores;
-              animation-duration: 2s;
+              animation-duration: 1s;
               animation-direction: alternate;
               animation-iteration-count: infinite;
 }
