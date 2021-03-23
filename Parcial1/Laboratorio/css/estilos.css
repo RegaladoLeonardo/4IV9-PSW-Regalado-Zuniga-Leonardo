@@ -67,5 +67,10 @@ p{
               font-size: 150%
 }
 
+.barra{
+              border: solid 3px rgb(255, 255, 255);
+              font-size: 100% ;
+              display: inline-block;
+}
 
 
