@@ -12,12 +12,6 @@ html, body{
 
 }
 
-html,body{
-              background: url(../fondos.png);
-              background-repeat: no-repeat;
-              background-attachment: fixed ;
-}
-
 body{
               display: flexbox;
 
