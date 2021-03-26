@@ -24,6 +24,7 @@ section{
 .sub_large{
               width: 70rem;
               height: 90rem;
+              border: solid 2px rgb(3, 1, 1);
 }
 
 .large_cont{
@@ -32,13 +33,13 @@ section{
 
 .large{
 
-              height: 80rem;
+              height: 60rem;
               width: 30rem;
+              border: solid 2px rgb(3, 1, 1);
 
 }
 
 div{
-              border: solid 2px rgb(3, 1, 1);
               width: 40%;
               display:inline-block;
               height: 300px;
@@ -48,5 +49,11 @@ div{
               width: 70rem;
               height: 24rem;
               margin-left: 3rem;
+              border: solid 2px rgb(3, 1, 1);
+}
+
+.left_large{
+              border: solid 2px rgb(3, 1, 1);
+
 }
 
