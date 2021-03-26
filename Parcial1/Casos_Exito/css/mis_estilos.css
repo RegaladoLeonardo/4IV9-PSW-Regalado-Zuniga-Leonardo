@@ -19,12 +19,13 @@ body, html{
 .cero{
               grid-column: 1 / 6 ;
               grid-row: 1 / 1;
+              width: 125rem;
 }
 
 .one {
               grid-column: 1 / 2 ;
               grid-row: 2 / 7;
-              margin-left: 35px;
+              margin-left: 5px;
 
               width: 30rem;
 }
