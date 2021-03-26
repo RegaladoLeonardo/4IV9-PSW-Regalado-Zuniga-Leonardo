@@ -1,0 +1,52 @@
+
+
+*{
+              
+              color: #000000;
+              text-align: center;
+              margin:0;
+              padding:0;
+}
+
+
+html, body{
+              background-color: #00506b;
+}
+
+section{
+
+              border: solid 2px rgb(3, 1, 1);
+              font-size: 20px;
+              
+
+}
+
+.sub_large{
+              width: 70rem;
+              height: 90rem;
+}
+
+.large_cont{
+              display:inline-block;
+}
+
+.large{
+
+              height: 80rem;
+              width: 30rem;
+
+}
+
+div{
+              border: solid 2px rgb(3, 1, 1);
+              width: 40%;
+              display:inline-block;
+              height: 300px;
+}
+
+.sup_large{
+              width: 70rem;
+              height: 24rem;
+              margin-left: 3rem;
+}
+
