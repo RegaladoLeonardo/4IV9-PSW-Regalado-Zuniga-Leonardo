@@ -8,3 +8,17 @@
               }
               
 }
+
+
+.barras{
+              
+}
+
+
+.barras:hover{
+
+              animation-name: giratorio;
+              animation-duration: 3s;
+              animation-iteration-count: infinite;
+              animation-direction: alternate;
+}
