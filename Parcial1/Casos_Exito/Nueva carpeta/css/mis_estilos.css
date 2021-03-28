@@ -115,16 +115,16 @@ h1, h2, h3{
 .two {
               grid-column: 2 / 4;
               grid-row: 2/ 3;
-              height: 26rem;
+              height: 25rem;
               margin-left: 1rem;
-              width: 74rem;
+              width: 73rem;
 
 }
 .three {
               grid-column: 2 / 3;
               grid-row: 3/ 8 ;
               padding: 1rem;
-              margin-left: 20px;
+              margin-left: 1rem;
 
               display: grid;
               grid-template-columns: repeat(3, 1fr);
@@ -139,7 +139,6 @@ h1, h2, h3{
               grid-column: 3 / 4;
               grid-row: 2/3;
               height: 20rem;
-              background-color: blueviolet;
 
               width: 40rem;
 }
@@ -181,9 +180,6 @@ h1, h2, h3{
 
 }
 
-.regreso{
-              color: rgb(0, 0, 0);
-}
 
 section{
               margin-left: 8px;
