@@ -1,0 +1,115 @@
+
+*{
+              padding: 10px;
+              margin: 0;
+              color: #000000;
+              text-align: center;
+              
+              font-family: 'Verdana' , sans-serif;
+}
+
+html, body{
+              background-color: rgb(0, 0, 0);
+
+}
+
+body{
+              display: flexbox;
+
+}
+
+hr{
+              background-color: #ffffff;
+              border: #ffffff;
+              height: 1px;
+              padding: 1px;
+}
+
+footer{
+              display:inline-flex;
+}
+
+article{
+              margin-left: 200px;
+}
+
+h3, h4{
+              font-size: 120%
+}
+.todo{
+              display: flex;
+              justify-content: center;
+
+              flex-wrap: wrap;
+
+}
+
+.img-c{
+              width: 400px;
+}
+
+
+.logo{
+background-color: #000000;
+
+border-radius: 1%;
+
+display: inline-block;
+
+
+}
+
+.fondo-logo{
+              border: solid 9px rgb(3, 1, 1);
+              display:inline-flex;
+              border-radius: 20%;
+              border:9px;
+              padding: 0px;
+
+}
+
+.text{
+              width: 900px;
+}
+
+p{
+              font-size: 150%
+}
+
+.barra{
+              border: solid 3px rgb(255, 255, 255);
+              font-size: 100% ;
+              display: inline-block;
+
+              margin-left: 11px;
+              margin-right: 11px;
+
+              
+
+}
+
+.navega{
+              background-color: #009e8f;
+              width: 43rem;
+              display:inline-flex;
+              justify-content: space-between;
+              border-radius: 5%;
+
+}
+
+
+.barra:hover{
+              z-index: 2;
+              -webkit-transition: all 200ms ease-in;
+              -webkit-transform: scale(1.1);
+              -ms-transition: all 200ms ease-in;
+              -ms-transform: scale(1.5);
+              -moz-transition: all 200ms ease-in;
+              -moz-transform: scale(1.4);
+
+}
+
+
+.tit{
+              font-family: 'Neuropol' , sans-serif;
+}

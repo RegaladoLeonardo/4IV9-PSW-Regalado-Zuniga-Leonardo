@@ -5,6 +5,7 @@
               color: #000000;
               text-align: center;
               
+              font-family: 'Verdana' , sans-serif;
 }
 
 html, body{
@@ -35,21 +36,27 @@ article{
 h3, h4{
               font-size: 120%
 }
-.secciones{
-              width: 40%;
-              display: inline-block;
-              height: 300px;
-              margin-left: 4px;
-              margin-right: 4px;
+.todo{
+              display: flex;
+              justify-content: center;
+
+              flex-wrap: wrap;
 
 }
 
+.img-c{
+              width: 400px;
+}
 
 
 .logo{
 background-color: #000000;
 
 border-radius: 1%;
+
+display: inline-block;
+
+
 }
 
 .fondo-logo{
@@ -62,8 +69,7 @@ border-radius: 1%;
 }
 
 .text{
-              padding: bottom 20rem;
-              display: inline-flex;
+              width: 900px;
 }
 
 p{
@@ -74,6 +80,36 @@ p{
               border: solid 3px rgb(255, 255, 255);
               font-size: 100% ;
               display: inline-block;
+
+              margin-left: 11px;
+              margin-right: 11px;
+
+              
+
+}
+
+.navega{
+              background-color: #009e8f;
+              width: 43rem;
+              display:inline-flex;
+              justify-content: space-between;
+              border-radius: 5%;
+
 }
 
 
+.barra:hover{
+              z-index: 2;
+              -webkit-transition: all 200ms ease-in;
+              -webkit-transform: scale(1.1);
+              -ms-transition: all 200ms ease-in;
+              -ms-transform: scale(1.5);
+              -moz-transition: all 200ms ease-in;
+              -moz-transform: scale(1.4);
+
+}
+
+
+.tit{
+              font-family: 'Neuropol' , sans-serif;
+}

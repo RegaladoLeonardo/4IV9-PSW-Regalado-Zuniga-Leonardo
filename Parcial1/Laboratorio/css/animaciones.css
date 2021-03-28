@@ -26,14 +26,3 @@
               animation-iteration-count: infinite;
               
 }
-
-.giro{
-              align-items: center;
-              animation-name: giratorio;
-              animation-duration: 7s;
-              
-              
-              animation-timing-function: ease-in-out;
-              
-              animation: giratorio 2s ease-in-out infinite;
-}
