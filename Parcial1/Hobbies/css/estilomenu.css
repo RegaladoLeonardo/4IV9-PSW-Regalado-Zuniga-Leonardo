@@ -17,9 +17,9 @@ html, body{
              
 }
 
-
-
-
+h2{
+              margin-top: 4rem;
+}
 
 .contenedor{ 
 
@@ -48,7 +48,7 @@ html, body{
               grid-column: 1;
               grid-row: 1 ;
 
-              margin-top: 3rem;
+              margin-top: 11rem;
               margin-left: 1rem;
 
 }
@@ -57,6 +57,8 @@ html, body{
               grid-row: 2/3;
 
               height: 30rem;
+
+              margin-top: 7rem;
 
 }
 .six {
@@ -70,8 +72,11 @@ html, body{
 
               
 
+}
 
-
+a{
+              height: 3rem;
+              width: 5rem;
 }
 
 .musica2{
@@ -86,11 +91,12 @@ html, body{
 }
 
 .musica{
-              border:solid  white;
 
-              width: 47rem;
+              width: 41rem;
 
               padding: 2rem;
+              margin-left: 6rem;
+              background: rgb(255, 255, 255,.5);
 }
 
 .inst{
@@ -107,6 +113,7 @@ html, body{
               
               width: 30rem;
               display: grid;
+              height: 50rem;
 
 
               grid-template-columns: repeat(3, 1fr);
@@ -165,3 +172,7 @@ z-index: 2;
               color: rgb(12, 23, 182);
 }
 
+
+.au{
+              display: inline-block;
+}

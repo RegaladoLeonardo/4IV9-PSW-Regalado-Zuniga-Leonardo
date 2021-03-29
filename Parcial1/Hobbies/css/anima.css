@@ -1,5 +1,25 @@
+@keyframes colores{
+              from{
+                            color: rgb(86, 28, 140);
+              }
+              to{
+                            color: rgb(163, 10, 10);
+              }
+              
+}
 
 
 
 
 
+
+
+
+
+.inst{
+
+              
+              animation-name: colores;
+              animation-direction: alternate;
+              animation-iteration-count: infinite;
+}
