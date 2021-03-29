@@ -40,7 +40,7 @@ html, body{
 }
 .two {
               
-              background:rgb(39, 160, 160);
+              background: gray;
               height: 5rem;
 }
 .three {
@@ -64,6 +64,8 @@ html, body{
               justify-content: center;
 
               flex-wrap: wrap;
+
+              background-color:gray;
 
               
 
