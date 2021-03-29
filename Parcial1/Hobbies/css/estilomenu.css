@@ -10,7 +10,7 @@ html, body{
 }
 
 
-.one,.five,.two,.three,.four,.six{
+.one,.five,.two,.three,.six{
 
               background-color: rgb(255, 255, 255,.8);
 
@@ -34,7 +34,7 @@ html, body{
 
 }
 .one {
-              background:rgb(16, 179, 179);
+              background:rgb(15, 29, 67);
 
 
 }
@@ -58,8 +58,15 @@ html, body{
 
 }
 .six {
-              grid-column: 3;
-              grid-row: 4;
+              
+              display: flex;
+              justify-content: center;
+
+              flex-wrap: wrap;
+
+              
+
+
 
 }
 
@@ -74,6 +81,10 @@ html, body{
               grid-row: 1;
 }
 
+.hobbie{
+              font-size: 20px;
+}
+
 .body{
               
               width: 30rem;
@@ -84,7 +95,7 @@ html, body{
               grid-gap: 10px;
               grid-auto-rows: minmax(100px, auto);
 
-              border: solid black;
+              background-color: rgb(255, 255, 255,.5);
 
 
 }
@@ -97,8 +108,13 @@ nav{
 
               justify-content: center;
 
-              width: 153rem;
+              width: 155rem;
               font-family:fantasy
+}
+
+.info{
+              margin-left: 2rem;
+              margin-right:2rem ;
 }
 
 
@@ -113,3 +129,4 @@ z-index: 2;
 
               color: rgb(12, 23, 182);
 }
+
