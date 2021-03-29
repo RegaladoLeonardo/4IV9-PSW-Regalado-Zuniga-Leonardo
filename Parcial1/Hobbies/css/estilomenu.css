@@ -34,12 +34,14 @@ html, body{
 }
 .one {
               background:rgb(15, 29, 67);
+              height: 2rem;
 
 
 }
 .two {
               
               background:rgb(39, 160, 160);
+              height: 5rem;
 }
 .three {
               grid-column: 1;
@@ -69,8 +71,19 @@ html, body{
 
 }
 
+.musica2{
+
+              
+              grid-template-columns: repeat(3, 1fr);
+              grid-gap: 10px;
+              grid-auto-rows: minmax(100px, auto);
+
+
+              width: 60rem;
+}
+
 .musica{
-              border:solid white;
+              border: white;
 
 }
 
