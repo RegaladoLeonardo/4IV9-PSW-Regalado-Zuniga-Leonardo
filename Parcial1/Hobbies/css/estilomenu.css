@@ -21,15 +21,10 @@ html, body{
 
 
 .contenedor{ 
-              display: grid;
 
-
-              grid-template-columns: repeat(3, 1fr);
-              grid-gap: 10px;
-              grid-auto-rows: minmax(100px, auto);
-
-              flex-flow: row wrap;
               justify-content: center;
+
+              display: inline-block
 
 
 
@@ -58,17 +53,10 @@ html, body{
               margin-left: 40rem;
               width: 65rem;
 }
-.five {
-              grid-column: 1;
-              grid-row: 4 / 11;
-
-              margin-left:75rem;
-
-              width: 30rem;
-}
 .six {
               grid-column: 3;
               grid-row: 4;
+
 }
 
 .body{
