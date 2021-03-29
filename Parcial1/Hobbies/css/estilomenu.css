@@ -34,22 +34,27 @@ html, body{
 
 }
 .one {
-              ackground:rgb(99,100,100);
+              background:rgb(16, 179, 179);
 
 
 }
 .two {
               
-              ackground:rgb(99,100,100);
+              background:rgb(39, 160, 160);
 }
 .three {
               grid-column: 1;
-              grid-row: 4 / 11;
+              grid-row: 1 ;
+
+              margin-top: 3rem;
+              margin-left: 1rem;
 
 }
 .four {
               grid-column: 1;
-              grid-row: 3;
+              grid-row: 2/3;
+
+              height: 30rem;
 
 }
 .six {
@@ -61,6 +66,12 @@ html, body{
 .musica{
               border:solid white;
 
+}
+
+.inst{
+
+              grid-column: 1;
+              grid-row: 1;
 }
 
 .body{
