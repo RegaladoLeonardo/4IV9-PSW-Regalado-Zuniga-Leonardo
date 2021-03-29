@@ -86,8 +86,11 @@ html, body{
 }
 
 .musica{
-              border: white;
+              border:solid  white;
 
+              width: 52rem;
+
+              padding: 2rem;
 }
 
 .inst{
@@ -132,6 +135,23 @@ nav{
               margin-right:2rem ;
 }
 
+.circulo{
+              border: solid black;
+
+              margin-top: 5rem;
+
+              width: 20rem;
+              height: 20rem;
+              display: inline-block;
+
+              border-radius: 50%;
+
+              
+              background: url(../ncs.png);
+              background-repeat: no-repeat;
+              background-attachment:local;
+              
+}
 
 nav:hover{
 z-index: 2;
