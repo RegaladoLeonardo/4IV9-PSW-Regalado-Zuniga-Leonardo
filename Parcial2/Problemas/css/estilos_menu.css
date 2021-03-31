@@ -1,4 +1,9 @@
 
+*{
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
 body, html{
 
               background: url(../fondo.jpg);
@@ -7,12 +12,54 @@ body, html{
 }
 
 .contenedor{
-              border: 4px solid black;
               display: flex;
               justify-content: center;
+              
+              flex-wrap: wrap;
+              
+}
+
+
+
+.opcion{
+              background-color: gray;
+              border: 2px solid black;
+              height: 4rem;
+              width: 98%;
+
+
 }
 
 .menu{
-              border: 4px solid white;
-              padding: 1rem;
+              background-color:  rgba(255, 255, 255, 0.7);
+              border: 2px solid white;
+              width: 15rem;
+
+              margin-left: 3rem;
+              margin-right: 3rem;
+
+              display: flexs;
+}
+
+.barra{
+              width: 100%;
+              background-color: rgb(35, 25, 79);
+              display: flex;
+              justify-content: center;
+              color: white;
+              
+}
+
+p{
+              display: flex;
+              justify-content: center;
+              color: white;
+              margin-top: 4rem;
+              
+}
+
+footer{
+              margin-top: 3rem;
+              
+              
 }
