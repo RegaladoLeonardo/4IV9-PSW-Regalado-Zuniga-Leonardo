@@ -14,10 +14,14 @@ ejecutar.addEventListener('click', () => {
 function validar(e){
               let teclado = e.keyCode;
 
-              let expresion = /[0-9\d .]/;
+              let expresion = /[0-9]/;
 
-              let entrada = String.fromCharCode(teclado);
-              valido = expresion.test(entrada);
+              valido1 = expresion.test(parseInt(document.formulario.venta1.value));
+              valido2 = expresion.test(parseInt(document.formulario.venta2.value));
+              valido3 = expresion.test(parseInt(document.formulario.venta3.value));
+
+              valido = valido1 & valido2 & valido3
+
               return valido;
               
 }
