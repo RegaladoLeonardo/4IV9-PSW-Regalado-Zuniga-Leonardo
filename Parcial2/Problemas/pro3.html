@@ -14,6 +14,32 @@
                             </a>
               </div>
 
+              <form method="get" 
+              name="formulario" action="problema01.html">
+              <table align="center" border="1" >
+                            <tr>
+                                          <td class="td_up" >Introduzca la cantidad a invertir</td>
+                                          <td class="td_down" ><input type="text" name="cantidad"
+                                          onkeypress="validar(event)"></td>
+
+                            </tr>
+                            <tr>
+                                          <td class="td_up" >Su saldo total es de:</td>
+                                          <td class="td_down" ><input type="text" name="sueldoti" id="cantidadti"
+                                          readonly="readonly" class="input_text"></td>
+                            </tr>
+                            <tr>
+                                          <td class="boton">
+                                                        <input id="env" type="button" name="enviar"
+                                          value="Aplicar interes" onclick="interes()">
+                                          </td>
+                                          <td class="td_down" ><input type="button" name="borrard" 
+                                          value="Borrar"
+                                          onclick="borrar()"></td>
+                            </tr>
+              </table>
+</form>
+
               <footer>
                             <p>
                                           Hecho por Leonardo Daniel Regalado Zuñiga. &reg;

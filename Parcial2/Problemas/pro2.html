@@ -6,6 +6,7 @@
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
               <link rel="stylesheet" href="./css/estilo_problemas.css">
               <title>Document</title>
+              
 </head>
 <body>
               <div>
@@ -14,10 +15,64 @@
                             </a>
               </div>
 
+              <form method="get" 
+                            name="formulario" action="problema01.html">
+                            <table align="center" border="1" >
+                                          <tr>
+                                                        <td class="td_up" >Ingrese el valor de la primera venta</td>
+                                                        <td class="td_down" >
+                                                                      <input type="text" name="venta1" onkeypress="validar(event)"></td>
+                                                        
+                                                        
+
+                                          </tr>
+
+                                          <tr>
+                                                        <td class="td_up" >Ingrese el valor de la segunda venta</td>
+                                                        <td class="td_down" >
+                                                                      <input type="text" name="venta2" onkeypress="validar(event)">
+                                                        </td>
+
+                                          </tr>
+                                          <tr>
+                                                        <td class="td_up" >Ingrese el valor de la tercera venta</td>
+                                                        <td class="td_down" >
+                                                                      <input type="text" name="venta3" onkeypress="validar(event)">
+                                                        </td>
+
+                                          </tr>
+
+                                          <tr>
+                                                        <td class="td_up" >Monto por concepto de comision: </td>
+                                                        <td class="td_down" >
+                                                                      <input type="text" name="comision" readonly="readonly" class="input_text">
+                                                        </td>
+                                          </tr>
+
+                                          <tr>
+                                                        <td class="td_up" >Monto total: </td>
+                                                        <td class="td_down" >
+                                                                      <input type="text" name="total"  readonly="readonly" class="input_text">
+                                                        </td>
+                                          </tr>
+                                          <tr>
+                                                        <td class="boton">
+                                                                      <input id="cal" type="button" name="enviar" value="Calcular" onclick="calcular()">
+                                                        
+                                                        </td>
+                                                        <td class="td_down" >
+                                                                      <input type="button" id="borra" name="borrard" value="Borrar" onclick="borrar()">
+                                                        </td>
+                                          </tr>
+                            </table>
+              </form>
+
               <footer>
                             <p>
                                           Hecho por Leonardo Daniel Regalado Zuñiga. &reg;
                             </p>
               </footer>
+
+              <script  src="./js/validacion_pro2.js"></script>
 </body>
 </html>
