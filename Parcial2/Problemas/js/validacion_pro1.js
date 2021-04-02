@@ -17,10 +17,10 @@ function validar(e){
 }
 
 function interes(){
-              var valor = document.formulario.cantidad.value;
-              var resultado = parseInt(valor);
-              var interes = resultado*0.02;
-              var total = resultado + interes;
+              let valor = document.formulario.cantidad.value;
+              let resultado = parseInt(valor);
+              let interes = resultado*0.02;
+              let total = resultado + interes;
 
               document.formulario.sueldoti.value="$"+total;
 }
@@ -32,7 +32,7 @@ function borrar(){
 
 ejecurar.addEventListener('click', () => {
               if(!valido){
-                            alert('El campo no es valido')
+                            alert('El campo no es valido!')
                             return true;
               }
 })
