@@ -16,23 +16,26 @@ body, html{
               justify-content: center;
               
               flex-wrap: wrap;
+              margin-top: 2rem;
               
 }
 
 
 
 .opcion{
-              background-color: gray;
-              border: 2px solid black;
+              
               height: 4rem;
-              width: 98%;
+              width: 100%;
+              margin-top: 1rem;
 
+              background-color: rgba(0, 0, 0, 0);
+              color: white;
+              
 
 }
 
 .menu{
-              background-color:  rgba(255, 255, 255, 0.7);
-              border: 2px solid white;
+              border: 0px solid white;
               width: 15rem;
 
               margin-left: 3rem;
@@ -60,6 +63,31 @@ p{
 
 footer{
               margin-top: 3rem;
+              bottom: 0px;
+              position: absolute;
+}
+
+/*
+.opcion:hover{
               
-              
+              z-index: 2;
+              -webkit-transition: all 200ms ease-in;
+              -webkit-transform: scale(1.009);
+              -ms-transition: all 200ms ease-in;
+              -ms-transform: scale(1.4);
+              -moz-transition: all 200ms ease-in;
+              -moz-transform: scale(1.5);
+              color:rgb(91, 11, 118)
+}
+*/
+
+a{
+              text-decoration: none;
+              color: white;
+}
+
+.opcion:hover{
+              background-color: rgb(157, 157, 255);
+              border: 2px solid white;
+              color: rgb(49, 3, 92);
 }
