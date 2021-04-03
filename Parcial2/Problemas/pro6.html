@@ -14,10 +14,51 @@
                             </a>
               </div>
 
+              <div class="nota"> Presione el icono </div>
+
+              
+              <form method="get" 
+                            name="formulario" action="problema01.html">
+                            <table align="center" border="1" >
+                                          <tr>
+                                                        <td class="td_up" >Introduce tu fecha de nacimiento</td>
+                                                        <td class="td_down" ><input type="date" name="fecha"></td>
+
+                                          </tr>
+                                          <tr>
+                                                        <td class="td_up" >Su edad es de:</td>
+                                                        <td class="td_down" ><input type="text" name="edad" 
+                                                        readonly="readonly" class="input_text"></td>
+                                          </tr>
+                                          
+                                          <tr>
+                                                        <td class="td_up" ></td>
+                                                        <td class="td_down" ><input type="text" name="mes" 
+                                                        readonly="readonly" class="input_text"></td>
+                                          </tr>
+                                          
+                                          <tr>
+                                                        <td class="td_up" ></td>
+                                                        <td class="td_down" ><input type="text" name="dia" 
+                                                        readonly="readonly" class="input_text"></td>
+                                          </tr>
+                                          <tr>
+                                                        <td class="boton">
+                                                                      <input id="env" type="button" name="enviar"
+                                                        value="Calcular edad" >
+                                                        </td>
+                                                        <td class="td_down" ><input type="button" name="borrard" 
+                                                        value="Borrar"
+                                                        onclick="borrar()"></td>
+                                          </tr>
+                            </table>
+              </form>
+
               <footer>
                             <p>
                                           Hecho por Leonardo Daniel Regalado Zuñiga. &reg;
                             </p>
               </footer>
+              <script src="./js/validacion_pro6.js"></script>
 </body>
 </html>
