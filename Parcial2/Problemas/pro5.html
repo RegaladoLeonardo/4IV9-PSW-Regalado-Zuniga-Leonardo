@@ -13,11 +13,50 @@
                                           <img src="regresoo.png" height="50rem" alt="">
                             </a>
               </div>
+              
+              <form method="get" 
+                            name="formulario" action="problema01.html">
+                            <table align="center" border="1" >
+                                          <tr>
+                                                        <td class="td_up" >Introduce el numero de hombres</td>
+                                                        <td class="td_down" ><input type="text" name="hombres"
+                                                        ></td>
+
+                                          </tr>
+                                          <tr>
+                                                        <td class="td_up" >Introduce el numero de mujeres</td>
+                                                        <td class="td_down" ><input type="text" name="mujeres"
+                                                        ></td>
+
+                                          </tr>
+                                          <tr>
+                                                        <td class="td_up" >Porcentaje de hombres  :</td>
+                                                        <td class="td_down" ><input type="text" name="porcent_h" id="cantidadti"
+                                                        readonly="readonly" class="input_text"></td>
+                                          </tr>
+                                          <tr>
+                                                        <td class="td_up" >Porcentaje de mujeres  :</td>
+                                                        <td class="td_down" ><input type="text" name="porcent_m" id="cantidadti"
+                                                        readonly="readonly" class="input_text"></td>
+                                          </tr>
+                                          <tr>
+                                                        <td class="boton">
+                                                                      <input id="env" type="button" name="enviar"
+                                                        value="Calcular" >
+                                                        </td>
+                                                        <td class="td_down" ><input type="button" name="borrard" 
+                                                        value="Borrar"
+                                                        onclick="borrar()"></td>
+                                          </tr>
+                            </table>
+              </form>
 
               <footer>
                             <p>
                                           Hecho por Leonardo Daniel Regalado Zuñiga. &reg;
                             </p>
               </footer>
+              
+              <script src="./js/validacion_pro5.js"></script>
 </body>
 </html>
