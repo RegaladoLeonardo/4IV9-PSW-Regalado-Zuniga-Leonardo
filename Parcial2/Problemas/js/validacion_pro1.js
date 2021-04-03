@@ -5,20 +5,15 @@ let valido;
 
 
 function validar(e){
-              var teclado = e.keyCode;
-              if(teclado == 8)
-                            return true;
+              var patron = /[0-9]/;
 
-              var patron = /[0-9\d .]/;
-
-              var prueba = String.fromCharCode(teclado);
-              valido = patron.test(prueba);
+              let valor = parseFloat(document.formulario.cantidad.value);
+              valido = patron.test(valor);
               return valido;
 }
 
 function interes(){
-              let valor = document.formulario.cantidad.value;
-              let resultado = parseInt(valor);
+              let resultado = parseFloat(document.formulario.cantidad.value);
               let interes = resultado*0.02;
               let total = resultado + interes;
 
@@ -31,9 +26,12 @@ function borrar(){
 }
 
 ejecurar.addEventListener('click', () => {
+
+              validar(null);
               if(!valido){
                             alert('El campo no es valido!')
                             return true;
               }
+              interes();
 })
 
