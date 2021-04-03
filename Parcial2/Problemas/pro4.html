@@ -14,10 +14,53 @@
                             </a>
               </div>
 
+              <div class="nota">Escriba las calificaciones con con decimales y de la siquiente manera &rarr;  Examen: 7.55  o Examen: 8.0 </div>
+
+              <form method="get" 
+              name="formulario" action="problema01.html">
+              <table align="center" border="1" >
+                            <tr>
+                                          <td class="td_up" >Introduce el promedio de los parciales</td>
+                                          <td class="td_down" ><input type="text" name="parciales"
+                                          onkeypress="validacion(event)"></td>
+
+                            </tr>
+                            <tr>
+                                          <td class="td_up" >Introduce la calificacion del examen final</td>
+                                          <td class="td_down" ><input type="text" name="examen"
+                                          onkeypress="validacion(event)"></td>
+
+                            </tr>
+                            <tr>
+                                          <td class="td_up" >Introduce la calificacion de tu trabajo final </td>
+                                          <td class="td_down" ><input type="text" name="trabajo"
+                                          onkeypress="validacion(event)"></td>
+
+                            </tr>
+                            <tr>
+                                          <td class="td_up" >Tu calificacion en Algoritmos es de:</td>
+                                          <td class="td_down" ><input type="text" name="calificacion" 
+                                          readonly="readonly" class="input_text"></td>
+                            </tr>
+                            <tr>
+                                          <td class="boton">
+                                                        <input id="env" type="button" name="enviar"
+                                                        value="Calcular" onclick="calificar()">
+                                          </td>
+                                          <td class="td_down" ><input type="button" name="borrard" 
+                                                        value="Borrar"
+                                                        onclick="borrar()">
+                                          </td>
+                            </tr>
+              </table>
+</form>
+
               <footer>
                             <p>
                                           Hecho por Leonardo Daniel Regalado Zuñiga. &reg;
                             </p>
               </footer>
+
+              <script src="./js/validacion_pro4.js"></script>
 </body>
 </html>
