@@ -14,10 +14,46 @@
                             </a>
               </div>
 
+              <div class="nota">
+                            Si los numeros son iguales se sumaran, si el primero es mayor se restaran y si no los sumara
+              </div>
+
+              <form method="get" 
+              name="formulario" action="problema01.html">
+              <table align="center" border="1" >
+                            <tr>
+                                          <td class="td_up" >Introduce el primer numero</td>
+                                          <td class="td_down" ><input type="text" name="num1"></td>
+
+                            </tr>
+                            <tr>
+                                          <td class="td_up" >Introduce el segundo numero</td>
+                                          <td class="td_down" ><input type="text" name="num2"></td>
+
+                            </tr>
+                            <tr>
+                                          <td class="td_up" >Resultado:</td>
+                                          <td class="td_down" ><input type="text" name="resultado" 
+                                          readonly="readonly" class="input_text"></td>
+                            </tr>
+                            <tr>
+                                          <td class="boton">
+                                                        <input id="env" type="button" name="enviar"
+                                                         value="Calcular" >
+                                          </td>
+                                          <td class="td_down" ><input type="button" name="borrard" 
+                                                        value="Borrar"
+                                                        onclick="borrar()">
+                                          </td>
+                            </tr>
+              </table>
+</form>
+
               <footer>
                             <p>
                                           Hecho por Leonardo Daniel Regalado Zuñiga. &reg;
                             </p>
               </footer>
+              <script src="./js/validacion_pro7.js"></script>
 </body>
 </html>
