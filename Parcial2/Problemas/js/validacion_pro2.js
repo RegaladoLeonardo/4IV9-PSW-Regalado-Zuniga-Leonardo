@@ -5,20 +5,23 @@ let valido;
 
 ejecutar.addEventListener('click', () => {
 
+              
+              validar(null);
               if(!valido){
                             alert('¡Algun o algunos de los campos es invalido!')
                             return true;
               }
+              calcular();
 })
 
 function validar(e){
-              let teclado = e.keyCode;
-
               let expresion = /[0-9]/;
 
-              valido1 = expresion.test(parseInt(document.formulario.venta1.value));
-              valido2 = expresion.test(parseInt(document.formulario.venta2.value));
-              valido3 = expresion.test(parseInt(document.formulario.venta3.value));
+              let valido1, valido2, valido3 ;
+
+              valido1 = expresion.test(parseFloat(document.formulario.venta1.value));
+              valido2 = expresion.test(parseFloat(document.formulario.venta2.value));
+              valido3 = expresion.test(parseFloat(document.formulario.venta3.value));
 
               valido = valido1 & valido2 & valido3
 
@@ -27,11 +30,8 @@ function validar(e){
 }
 
 function calcular(){
-              let valor1 = document.formulario.venta1.value;
-              let valor2 = document.formulario.venta2.value;
-              let valor3 = document.formulario.venta3.value;
 
-              let resultado_v = parseInt(valor1) + parseInt(valor2) + parseInt(valor3) ;
+              let resultado_v = parseFloat(document.formulario.venta1.value) + parseFloat(document.formulario.venta2.value) + parseFloat(document.formulario.venta3.value) ;
               let comision = resultado_v * 0.1 ;
               
               let monto = comision + 8850 ;
