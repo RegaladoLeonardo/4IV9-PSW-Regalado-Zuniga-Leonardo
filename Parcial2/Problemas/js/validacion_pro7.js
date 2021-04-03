@@ -17,8 +17,8 @@ ejecutar.addEventListener('click', () => {
 })
 
 function calcular(){
-              let a = parseInt(document.formulario.num1.value) ; 
-              let b = parseInt(document.formulario.num2.value) ;
+              let a = parseFloat(document.formulario.num1.value) ; 
+              let b = parseFloat(document.formulario.num2.value) ;
               let resultado;
               
               if(a==b){
@@ -43,8 +43,8 @@ function validacion(e){
               let expresion = /[0-9]/;
 
               
-              let valido1 = expresion.test(parseInt(document.formulario.num1.value));
-              let valido2 = expresion.test(parseInt(document.formulario.num2.value));
+              let valido1 = expresion.test(parseFloat(document.formulario.num1.value));
+              let valido2 = expresion.test(parseFloat(document.formulario.num2.value));
 
               valido = valido1 & valido2 ;
 
