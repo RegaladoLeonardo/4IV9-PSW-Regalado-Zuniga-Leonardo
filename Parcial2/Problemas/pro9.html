@@ -13,11 +13,38 @@
                                           <img src="regresoo.png" height="50rem" alt="">
                             </a>
               </div>
+              
+              <form method="get" 
+              name="formulario" action="problema01.html">
+              <table align="center" border="1" >
+                            <tr>
+                                          <td class="td_up" >Introduce las horas totales de trabajo</td>
+                                          <td class="td_down" ><input type="text" name="horas"></td>
+
+                            </tr>
+                            <tr>
+                                          <td class="td_up" >Monto a cobrar:</td>
+                                          <td class="td_down" ><input type="text" name="cobro" 
+                                          readonly="readonly" class="input_text"></td>
+                            </tr>
+                            <tr>
+                                          <td class="boton">
+                                                        <input id="env" type="button" name="enviar"
+                                                         value="Calcular" >
+                                          </td>
+                                          <td class="td_down" ><input type="button" name="borrard" 
+                                                        value="Borrar"
+                                                        onclick="borrar()">
+                                          </td>
+                            </tr>
+              </table>
+</form>
 
               <footer>
                             <p>
                                           Hecho por Leonardo Daniel Regalado Zuñiga. &reg;
                             </p>
               </footer>
+              <script src="./js/validacion_pro9.js"></script>
 </body>
 </html>
