@@ -4,10 +4,12 @@ let valido;
 
 ejecutar.addEventListener('click', () => {
 
+              validacion(null);
               if(!valido){
                             alert('¡Algun o algunos de los campos es invalido!')
                             return true;
               }
+              calificar();
 })
 
 function calificar(){
@@ -24,7 +26,7 @@ function calificar(){
 
 }
 
-function validacion(e){
+function validacion(){
 
               let expresion = /[0-9]/;
 
