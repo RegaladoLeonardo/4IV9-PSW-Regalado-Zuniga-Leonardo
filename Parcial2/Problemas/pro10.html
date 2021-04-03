@@ -13,11 +13,47 @@
                                           <img src="regresoo.png" height="50rem" alt="">
                             </a>
               </div>
+              <div class="nota">
+                            Escriba los         
+                  </div>
+
+              
+              <form method="get" 
+              name="formulario" action="problema01.html">
+              <table align="center" border="1" >
+                            <tr>
+                                          <td class="td_up" >Introduce los años de antiguedad con los que cuente</td>
+                                          <td class="td_down" ><input type="text" name="antiguedad"></td>
+
+                            </tr>
+                            <tr>
+                                          <td class="td_up" >Introduce tu salario mensual</td>
+                                          <td class="td_down" ><input type="text" name="salario"></td>
+
+                            </tr>
+                            <tr>
+                                          <td class="td_up" >Su utilidad es de:</td>
+                                          <td class="td_down" ><input type="text" name="utilidad" 
+                                          readonly="readonly" class="input_text"></td>
+                            </tr>
+                            <tr>
+                                          <td class="boton">
+                                                        <input id="env" type="button" name="enviar"
+                                                         value="Calcular" >
+                                          </td>
+                                          <td class="td_down" ><input type="button" name="borrard" 
+                                                        value="Borrar"
+                                                        onclick="borrar()">
+                                          </td>
+                            </tr>
+              </table>
+              </form>
 
               <footer>
                             <p>
                                           Hecho por Leonardo Daniel Regalado Zuñiga. &reg;
                             </p>
               </footer>
+              <script src="./js/validacion_pro10.js"></script>
 </body>
 </html>
