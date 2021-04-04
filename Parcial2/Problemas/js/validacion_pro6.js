@@ -26,7 +26,22 @@ ejecutar.addEventListener('click', () => {
 
 function calcular_edad(){
 
-              
+              const meses = {
+                            1: 31,
+                            2: 29,
+                            3: 31,
+                            4: 30,
+                            5: 31,
+                            6: 30,
+                            7: 31,
+                            8: 31,
+                            9: 30,
+                            10: 31,
+                            11: 30,
+                            12: 31,
+              }
+
+
               let usu_anio = document.formulario.fecha.value.substring(0,4) ;
               
               let usu_mes = document.formulario.fecha.value.substring(5,7) ;
@@ -38,11 +53,47 @@ function calcular_edad(){
               let mes =  fechaActual.getMonth()+1;
               let dia =  fechaActual.getDate();
               let anio =  fechaActual.getFullYear() ;
-
               
-              let edad_anios = anio - usu_anio;
-              let edad_mes =  mes - usu_mes;
-              let edad_dia = dia - usu_dia;
+                            
+              let edad_anios;
+              let edad_mes;
+              let edad_dia;
+
+              if(usu_mes > mes){
+                            edad_anios = anio - usu_anio - 1;
+                            if(dia >= usu_dia){
+                                          edad_mes  = (12 - usu_mes) + mes;
+                                          edad_dia = dia - usu_dia;
+                            }else{
+                                          edad_mes  = (12 - usu_mes) + mes - 1;
+                                          edad_dia = meses[mes - 1] - usu_dia + dia;
+                            }
+              }
+              else if(usu_mes == mes){
+                            if(dia >= usu_dia){
+                                          edad_anios = anio - usu_anio;
+                                          edad_mes  = (12 - usu_mes) + mes;
+                                          edad_dia = dia - usu_dia;
+                            }else{
+                                          edad_anios = anio - usu_anio - 1;
+                                          edad_mes  = (12 - usu_mes) + mes - 1;
+                                          if(edad_mes==12){
+                                                        edad_mes=0;
+                                                        edad_anios = edad_anios + 1;
+                                          }
+                                          edad_dia = meses[mes - 1] - usu_dia + dia;
+                            }
+              }
+              else{
+                            edad_anios = anio - usu_anio;
+                            if(dia >= usu_dia){
+                                          edad_mes  = mes;
+                                          edad_dia = dia - usu_dia;
+                            }else{
+                                          edad_mes  = mes - 1;
+                                          edad_dia = meses[mes - 1] - usu_dia + dia;
+                            }
+              }
 
 
 
