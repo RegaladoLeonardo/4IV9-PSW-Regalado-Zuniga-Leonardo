@@ -88,14 +88,25 @@ function pro3(){
               let var_limpio = valor.replace(/ /g, "");
               var_limpio = var_limpio.toUpperCase();
 
+              const arr = ['uno', 'dos', 'tres', 'cuatro', 'cinco'];
+
               
 
 
               let lista_numeros = [" "];
-
+              let mayorLetras = { numero: 0, index: 0 }
               palabras = var_limpio.split(",");
-              console.log(Array.from('foo'));
-              
+              palabras.forEach( (elemento, i, ar) => {
+                            const letras = [];
+                            for(letra of elemento){
+                                          if(!letras.includes(letra))
+                                                        letras.push(letra);
+                            }
+                            mayorLetras = letras.length > mayorLetras.numero ? { numero: letras.length, index: i } : mayorLetras ;
+              })
+              document.querySelector('#p3-output').textContent = `La palabra con mas letras unicas es ${palabras[mayorLetras.index]} con ${mayorLetras.numero} letra(s) unica(s)`;
+
+              /*
               
               for(let i; i<palabras.length; i++){//AQUI SE ESTA RECORRIENDO PALABRA POR PALABRA
                             let numero =0
@@ -109,27 +120,36 @@ function pro3(){
                                           
                                           for(let k; k<abecedario.length; k++){//AQUI SE ESTA COMPARANDO CADA LETRA DE LA PALABRA CON TODO EL ABECEDARIO
 
-                                                        if(letras[j]==abecedario[k]){
+                                                        if(letras[j]==abecedario[k]){//YA SE ENCONTRO LA LETRA 
 
-                                                                      for(let v; v<lista_existe.length; v++){
+                                                                      //AHORA VAMOS A VER SI NO SE REPITE LA LETRA
+                                                                      for(let v; v<lista_existe.length; v++){//METOO DEL ARRAY DE LAS LETRAS QUE YA SE IDENTIFICARON
+
+                                                                                    //SI NO SE ENCUENTRAN EN EL ARRAY DE LOS QUE YA ESTAN IDENTIFICADOS
+                                                                                    //SE SUMA EL NUMERO DE LA LETRA UNICA Y SE AGREGA LA LETRA A EL ARRAY DE IDENTIFICADAS 
+                                                                                    //SI SE ENCUENTRA EN EL DE IDENTIFICADAS ENTONCES NO SE SUMA LETRA UNICA Y NO SE AGREGA AL ARRAY 
+                                                                                    
 
                                                                                     //ALGO ESTA MAL POR QUE VA A SUMAR CADA VEZ LA LETRA SI VE QUE NO ESTA
                                                                                     if(abecedario[k]==lista_existe[v]){
                                                                                                   //NO HACE NADA
+                                                                                                  repite = repite +1;
                                                                                     }else{
                                                                                                   numero = numero + 1;
                                                                                                   lista_existe.push(abecedario[k]);
                                                                                     }
-                                                                      }
-
                                                                                     
+                                                                      }
 
                                                         }
 
                                           }
-                            }
+                            }//AHORA VAMOS A SEGUIR CON LA SIGUIENTE LETRA
+                            lista_numeros.push(numero);
                                                         
-              }
+              }//VAMOS A REVISAR LA SIGUIENTE PALABRA
+              */
+
               //alert(valor.replace(/ /g, ""));
               
               if(true){
