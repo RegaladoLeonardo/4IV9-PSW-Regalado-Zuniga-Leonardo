@@ -1,0 +1,1 @@
+web: java C:\Users\levar\Desktop\4IV9-PSW-Regalado-Zuniga-Leonardo\Parcial2\ServletHolaMundo\src\java -cp target/classes:target/dependency/* com.example.HelloWorld
