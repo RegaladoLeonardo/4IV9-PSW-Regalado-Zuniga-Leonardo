@@ -6,10 +6,20 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import static java.lang.Class.forName;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import java.sql.Statement;
+
+import java.sql.ResultSet;
+import static java.time.Clock.system;
+import javax.servlet.ServletConfig;
+
 
 /**
  *
@@ -26,6 +36,43 @@ public class Registro extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
+    private Connection con;
+    private Statement set;
+    private ResultSet rs;
+    
+    //constructor
+    
+    public void init(ServletConfig cfg) throws ServletException{
+        
+        String url = "jdbc:mysql:3306//localhost/registro4iv9";
+        
+        
+        String userName = "root";
+        String password = "LevAISQL90_8";
+        
+        
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            
+            
+            url = "jdbc:mysql://localhost/registro4iv9";
+            con = DriverManager.getConnection( url,userName , password);
+            set =  con.createStatement();
+            
+            System.out.println("Conexion exitosa");
+            
+        }catch(Exception e){
+            System.out.println("Conexion no exitosa");
+            System.out.println(e.getMessage());
+            System.out.println(e.getStackTrace());
+            
+        }
+    }
+    
+    
+    
+    
+    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -50,6 +97,16 @@ public class Registro extends HttpServlet {
             puertor = request.getRemotePort();
             
             
+            try{
+            
+                //Parte del registro en la base de datos
+                String q = "insert into mregistro "
+                        + "(nom_usu, appat_usu, apmat_usu, edad_usu, email_usu)"
+                        + "values "
+                        + "('"+nom+"', '"+appat+"', '"+apmat+"', "+edad+", '"+correo+"')";
+                set.executeUpdate(q);
+                System.out.println("Registro exitoso en la tabla");
+                
             
             out.println("<!DOCTYPE html>");
             out.println("<html>");
@@ -75,10 +132,29 @@ public class Registro extends HttpServlet {
                     + "<br>"
                     + "IP Remota: "+ipr
                     + "<br>"
-                    + "Puerto Renmoto: "+puertor);
+                    + "Puerto Renmoto: "+puertor
+                    + "<br>");
             out.println("<h1>Registro exitoso</h1>");
             out.println("</body>");
             out.println("</html>");
+            }catch(Exception e){
+                
+                System.out.println("Error al registrar en la tabla");
+                System.out.println(e.getMessage());
+                System.out.println(e.getStackTrace());
+                
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet Registro</title>"
+                + "<a href='index.html'>Regresar al menu principal</a>");            
+            out.println("</head>");
+            out.println("<body>"
+                    + "<br>");
+            out.println("<h1>Registro No exitoso, ocurrio un error </h1>");
+            out.println("</body>");
+            out.println("</html>");
+            }
         }
     }
 
