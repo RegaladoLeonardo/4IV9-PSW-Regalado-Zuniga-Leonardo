@@ -6,15 +6,11 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <link rel="stylesheet" href="style.css" type="text/css"/>
-
         <title>Registro de Usuarios</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>REGISTRO USUARIOS</div>
-        
         <div class="container" >
             <div class="contenedorRegistro" >
                 <form method="post" name="formulario" 
@@ -44,34 +40,27 @@ and open the template in the editor.
                 </form>
             </div>
                 <br>
-            <div class="contenedorConsultar"> 
+            <div class="contenedorConsultar" >
                 <br>
                 <form name="formularioConsultar" method="get" action="Consultar">
-                    <input type="submit" value="Consultar Tabla General de Usuarios">
+                    <input type="submit" value="Consultar Tabla General de Usuarios" >
                 </form>
-            
             </div>
                 <br>
-                <div class="contenedorEliminar"> 
+                <div class="contenedorEliminar" >
                     <br>
-                    <form name="formularioEliminar" method="post" action="Eliminar">
-                        <label>Ingresa el ID del usuario a eliminar</label>
-                        <input type="text" name="ideliminar">
-                        <input type="submit" value="Eliminar Registro">
-                    </form>
-
+                <form name="formularioEliminar" method="post" action="Eliminar">
+                    <label>Ingresa el ID del usuario a eliminar</label>
+                    <input type="text" name="ideliminar" >
+                    <input type="submit" value="Eliminar Registro" >
+                </form>
                 </div>
                 <br>
-                <div class="contenedorActualizar"> 
-                    <br>
-                    <form name="formularioEliminar" method="post" action="Eliminar">
-                        <label>Aqui va lo de actualizar datos</label>
-                        <input type="text" name="ideliminar">
-                        <input type="submit" value="Eliminar Registro">
-                    </form>
-
+                <div class="contenedorActualizar" >
+                    <label>
+                     Actualizacion
+                    </label>
                 </div>
-                
-          </div>
+        </div>
     </body>
 </html>

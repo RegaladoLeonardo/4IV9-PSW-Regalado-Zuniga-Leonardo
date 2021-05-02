@@ -3,22 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/levar/Desktop/4IV9-PSW-Regalado-Zuniga-Leonardo/Parcial2/ServletHolaMundo/nbproject/project.xml</file>
-            <file>file:/C:/Users/levar/Desktop/4IV9-PSW-Regalado-Zuniga-Leonardo/Parcial2/ServletHolaMundo/build.xml</file>
-            <file>file:/C:/Users/levar/Desktop/4IV9-PSW-Regalado-Zuniga-Leonardo/Parcial2/ServletHolaMundo/web/style.css</file>
-            <file>file:/C:/Users/levar/Desktop/4IV9-PSW-Regalado-Zuniga-Leonardo/Parcial2/ServletHolaMundo/.gitignore</file>
-            <file>file:/C:/Users/levar/Desktop/4IV9-PSW-Regalado-Zuniga-Leonardo/Parcial2/ServletHolaMundo/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/levar/Desktop/4IV9-PSW-Regalado-Zuniga-Leonardo/Parcial2/ServletHolaMundo/nbproject/build-impl.xml</file>
-            <file>file:/C:/Users/levar/Desktop/4IV9-PSW-Regalado-Zuniga-Leonardo/Parcial2/ServletHolaMundo/nbproject/genfiles.properties</file>
-            <file>file:/C:/Users/levar/Desktop/4IV9-PSW-Regalado-Zuniga-Leonardo/Parcial2/ServletHolaMundo/web/META-INF/context.xml</file>
-            <file>file:/C:/Users/levar/Desktop/4IV9-PSW-Regalado-Zuniga-Leonardo/Parcial2/ServletHolaMundo/Procfile</file>
-            <file>file:/C:/Users/levar/Desktop/4IV9-PSW-Regalado-Zuniga-Leonardo/Parcial2/ServletHolaMundo/nbproject/project.properties</file>
-            <file>file:/C:/Users/levar/Desktop/4IV9-PSW-Regalado-Zuniga-Leonardo/Parcial2/ServletHolaMundo/build/web/index.html</file>
-            <file>file:/C:/Users/levar/Desktop/4IV9-PSW-Regalado-Zuniga-Leonardo/Parcial2/ServletHolaMundo/src/java/Registro.java</file>
-            <file>file:/C:/Users/levar/Desktop/4IV9-PSW-Regalado-Zuniga-Leonardo/Parcial2/ServletHolaMundo/build/web/style.css</file>
-            <file>file:/C:/Users/levar/Desktop/4IV9-PSW-Regalado-Zuniga-Leonardo/Parcial2/ServletHolaMundo/web/index.html</file>
-            <file>file:/C:/Users/levar/Desktop/4IV9-PSW-Regalado-Zuniga-Leonardo/Parcial2/ServletHolaMundo/src/conf/MANIFEST.MF</file>
-            <file>file:/C:/Users/levar/Desktop/4IV9-PSW-Regalado-Zuniga-Leonardo/Parcial2/ServletHolaMundo/pom.xml</file>
+            <file>file:/C:/Users/levar/Desktop/ServletHolaMundo/src/java/Consultar.java</file>
+            <file>file:/C:/Users/levar/Desktop/ServletHolaMundo/web/index.html</file>
+            <file>file:/C:/Users/levar/Desktop/ServletHolaMundo/src/java/Registro.java</file>
+            <file>file:/C:/Users/levar/Desktop/ServletHolaMundo/src/java/Eliminar.java</file>
         </group>
     </open-files>
 </project-private>
